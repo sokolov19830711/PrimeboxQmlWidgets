@@ -78,11 +78,11 @@ Item {
 
     Connections {
         target: minusButton
-        onClicked: if((currentValue - 1) >= minValue) currentValue--
+        function onClicked() { if((currentValue - 1) >= minValue) currentValue-- }
     }
 
     Connections {
         target: plusButton
-        onClicked: if((currentValue + 1) <= maxValue) currentValue++
+       function onClicked() { if((currentValue + 1) <= maxValue) currentValue++ }
     }
 }
