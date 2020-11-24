@@ -8,7 +8,6 @@ Button {
     width: 92
     height: 92
     layer.enabled: false
-    font.pointSize: 10
     checkable: true
 
     background: Rectangle {
@@ -18,9 +17,11 @@ Button {
     contentItem: Text {
         color: "#fefefe"
         text: parent.text
-        font: parent.font
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         elide: Text.ElideRight
+        font.pointSize: 10
+        font.bold: true
+        font.family: "Calibri Light"
     }
 }
